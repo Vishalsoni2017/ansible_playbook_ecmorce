@@ -1,0 +1,12 @@
+- name: "edit firewall rule"
+  ansible.builtin.firewalld:
+    port: "{{item.name}}"
+    permanent: yes
+    zone: public
+    state: enabled
+  loop: "{{ports}}"
+
+- name: reload firewall rules.....
+  ansible.builtin.service:
+    name: firewalld
+    state: reloaded

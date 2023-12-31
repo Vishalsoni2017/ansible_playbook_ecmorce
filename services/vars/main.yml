@@ -1,0 +1,11 @@
+packages:
+  - name: httpd
+    required: True
+
+  - name: firewalld
+    required: True
+
+  - name: mariadb
+    required: True
+
+ 

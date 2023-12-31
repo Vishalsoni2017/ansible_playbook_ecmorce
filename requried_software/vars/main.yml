@@ -1,0 +1,21 @@
+packages:
+  - name: httpd
+    required: True
+
+  - name: git
+    required: True
+
+  - name: firewalld
+    required: True
+
+  - name: mariadb-server
+    required: True
+
+  - name: php
+    required: True
+  
+  - name: php-mysql
+    required: True
+
+  - name: python2
+    required: True

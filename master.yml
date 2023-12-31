@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  gather_facts: yes
+  connection: ssh
+  become: yes
+
+  roles:
+    
+    - mariaDB

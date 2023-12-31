@@ -1,0 +1,4 @@
+- name: "git cloning....."
+  ansible.builtin.git:
+    repo: https://github.com/Vishalsoni2017/ansible_web_apps.git
+    dest: /var/www/html/

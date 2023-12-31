@@ -1,0 +1,6 @@
+- name: Starting all the services....
+  service:
+    name: "{{item.name}}"
+    state: started
+    enabled: yes
+  loop: "{{packages}}"

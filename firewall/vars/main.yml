@@ -1,0 +1,6 @@
+ports:
+  - name: 80/tcp
+    required: True
+
+  - name: 3306/tcp
+    required: True

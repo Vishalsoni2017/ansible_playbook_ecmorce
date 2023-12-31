@@ -1,0 +1,5 @@
+- name: install s/w
+  yum: 
+    name: "{{item.name}}"
+    state: present
+  loop: "{{packages}}"
