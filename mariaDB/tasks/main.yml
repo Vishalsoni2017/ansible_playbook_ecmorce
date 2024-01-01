@@ -1,6 +1,6 @@
 - name: "RUN Database script"
   shell:
-    sh /home/ec2-user/ansible_playbook_ecmorce/mariaDB/tasks/db.sh
+    sh /home/ansible/ansible_playbook_ecmorce/db.sh
 
 - name: "Update IP in index.php file"
   command: sudo sed -i 's/172.20.1.101/localhost/g' /var/www/html/index.php
