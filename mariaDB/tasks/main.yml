@@ -1,9 +1,5 @@
 - name: "create user"
-  mysql_user:
-    name: root
-    login_user: root
-    login_password: 
-    password: root
-    state: present
+  shell:
+    sh /home/ec2-user/ansible_playbook_ecmorce/mariaDB/tasks/db.sh
   
   

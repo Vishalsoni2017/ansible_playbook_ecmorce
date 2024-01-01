@@ -5,8 +5,4 @@
   become: yes
 
   roles:
-    - requried_software
-    - services
-    - firewall
-    - git
     - mariaDB
